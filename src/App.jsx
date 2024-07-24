@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
+<<<<<<< HEAD
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import HeroSection from './components/HeroSection';
 import Course from './components/pages/course/Course';
@@ -28,6 +29,16 @@ const App = () => {
       </BrowserRouter>
 
     </>
+=======
+// import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+
+const App = () => {
+  return (
+    <div>
+      <HeroSection />
+    </div>
+>>>>>>> 5033de5fc5afca103ca2528b3c6decd6c4303508
   )
 }
 
