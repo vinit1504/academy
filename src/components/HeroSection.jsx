@@ -1,11 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import Navbar from './Navbar';
+import "./HeroSection.css"
+// import Navbar from './Navbar';
+import icon1 from "../assets/img/img1.svg"
+import icon2 from "../assets/img/img2.svg"
 
 const HeroSection = () => {
     return (
         <div className='bg-white'>
-            <Navbar />
+            {/* <Navbar /> */}
             <div className="relative isolate px-6 pt-14 lg:px-8">
                 <div
                     aria-hidden="true"
@@ -19,28 +22,32 @@ const HeroSection = () => {
                         className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
                     />
                 </div>
-                <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+                <div className="img">
+                    <img src={icon1} alt="" />
+                    <img src={icon2} alt="" />
+                </div>
+                <div className="mx-auto max-w-2xl py-32 sm:py-2 lg:py-5">
                     <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                         <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                             Announcing our next round of funding.{' '}
-                            <a href="#" className="font-semibold text-indigo-600">
+                            <a href="#" className="font-semibold text-red-600">
                                 <span aria-hidden="true" className="absolute inset-0" />
                                 Read more <span aria-hidden="true">&rarr;</span>
                             </a>
                         </div>
                     </div>
                     <div className="text-center">
-                        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                            Data to enrich your online business
+                        <h1 className="text-9xl font-bold tracking-tight text-red-600 sm:text-6xl">
+                            Launch your dream
+                            career with us
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
-                            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                            fugiat veniam occaecat fugiat aliqua.
+                            Master in-demand skills, gain a competitive edge, and accelerate your career with our <span className="text-red-600">industry-focused training</span>
                         </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <a
                                 href="#"
-                                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                className="rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
                                 Get started
                             </a>
