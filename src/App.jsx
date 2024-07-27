@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Hirefromus from './components/pages/Hirefromus/Hirefromus';
 import About from './components/pages/About/About';
+import Pricing from './components/pages/pricing/Pricing';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/masterclass" element={<Masterclass />} />
           <Route path="/Hire" element={<Hirefromus />} />
           <Route path="/Aboutus" element={<About />} />
+          <Route path='/pricing' element={<Pricing/>}/>
         </Routes>
       <Footer />
       </BrowserRouter>

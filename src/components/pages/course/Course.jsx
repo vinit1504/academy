@@ -17,7 +17,7 @@ const Course = () => {
   const posts = [
     {
       id: 1,
-      title: 'Web Development',
+      title: 'Full Stack JvaScript',
       description: 'Explore the latest trends and technologies in web development.',
       backgroundImage: co1,
       img: co1

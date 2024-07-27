@@ -66,7 +66,7 @@ const About = () => {
           <div className='flex flex-col w-[100%] sm:w-[80%] sm:flex-row  mx-auto mt-10 gap-5 p-2 justify-between'>
             <div className="1 bg-red-100 p-5 rounded-3xl flex w-[80%] sm:w-[30%]  gap-2 items-center mx-auto"><h1 className='text-6xl text-red-300 font-semibold'>1</h1><h1>Access a diverse talent pool</h1>
             </div>
-            <div className="1  bg-red-100 p-5 rounded-3xl flex w-[80%] sm:w-[3  0%] gap-2 items-center mx-auto"><h1 className='text-6xl text-red-300 font-semibold'>2</h1><h1>Access a diverse talent pool</h1></div>
+            <div className="1  bg-red-100 p-5 rounded-3xl flex w-[80%] sm:w-[30%] gap-2 items-center mx-auto"><h1 className='text-6xl text-red-300 font-semibold'>2</h1><h1>Access a diverse talent pool</h1></div>
             <div className="1  bg-red-100 p-5 rounded-3xl flex w-[80%] sm:w-[30%] gap-2 items-center mx-auto  "><h1 className='text-6xl text-red-300 font-semibold'>3</h1><h1>Access a diverse talent pool</h1></div>
           </div>
         </div>
