@@ -10,7 +10,7 @@ const CoursesComponent = ({ posts }) => {
           {posts.map((post) => (
           <article 
           key={post.id} 
-          className="flex max-w-xl flex-col items-start justify-between p-6 rounded-3xl border-2 border-opacity-100 hover:border-red-100 h-[120%] w-[100%] relative" 
+          className="flex max-w-xl flex-col items-start justify-between p-6 rounded-3xl border-5 border-opacity-100 hover:border-red-100 h-[120%] w-[100%] relative" 
           style={{ backgroundImage: `url(${post.backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
             <img src={soon} alt="" className='top-[-7%] right-[9%] absolute w-40'/>

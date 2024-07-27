@@ -5,7 +5,14 @@ import icon2 from './../../../assets/img/contact_icon2.svg'
 import co1 from './../../../assets/img/co-1.svg'
 import co2 from './../../../assets/img/co-2.svg'
 import About from './../About/About';
+import Carousel from './../../Carousel'
+import Question from '../../Question'
+import './hire.css'
+import { IoIosArrowRoundForward } from "react-icons/io";
+import Course from './../course/Course';
 const Hirefromus = () => {
+
+
   const posts = [
     {
       id: 1,
@@ -56,7 +63,7 @@ const Hirefromus = () => {
             <img src={icon2} alt="" className='img1a' />
             <img src={icon1} alt="" className='img2a' />
           </div>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
+          <div className=" flex items-center justify-center gap-x-6">
             <a
               href="#"
               className=" bg-red-600 px-3.5 py-2.5 text-sm font-semibold rounded-3xl text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
@@ -70,19 +77,20 @@ const Hirefromus = () => {
         </h1>
         {/* <CoursesComponent posts={posts} /> */}
         <div className="py-4 sm:py-1 w-full flex justify-center mx-auto">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 pt-1 sm:mt-16 sm:pt-2 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div className="mx-auto max-w-8xl w-[100%] lg:px-8">
+            <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 pt-1 sm:mt-16 sm:pt-2  lg:max-w-none lg:grid-cols-2 lg:w-[60%] lg:mx-auto">
               {posts.map((post) => (
                 <article
                   key={post.id}
-                  className="flex max-w-xl flex-col items-start justify-between p-4 rounded-3xl border-2 border-opacity-100 hover:border-red-100 h-[180px] w-full relative"
+                  className="flex max-w-xl flex-col items-start  p-4 rounded-3xl border-2 border-opacity-100 hover:border-red-100 h-[180px] w-[100%] sm:w-[100%] sm:mx-auto  relative"
                   style={{ backgroundImage: `url(${post.backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                 >
                   <div className="group">
-                    <h3 className="mt-2 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600 w-full sm:w-80">
+                    <h3 className="mt-2 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600 py-4 sm:w-10 w-10">
                       <span className="absolute inset-0" />
                       {post.title}
                     </h3>
+                    <p className='text-[12px] mt-6 flex items-center '>Know More <IoIosArrowRoundForward className='text-[16px]'/></p>
                   </div>
                 </article>
               ))}
@@ -90,41 +98,61 @@ const Hirefromus = () => {
           </div>
         </div>
         <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3.13em] text-center mt-[10%]">
-        Partner companies
+          Partner companies
         </h1>
-        <span className='text-xl flex justify-center  tracking-tight text-black sm:text-[1.13em]  sm: leading-[80px]'>Our graduates are involved in building</span>
+        <span className='text-[15px] flex justify-center  tracking-tight text-black sm:text-[1.13em]  sm:leading-[80px]'>Our graduates are involved in building</span>
         {/* <Join /> */}
-        <div className='certificates w-[80%] mx-auto mt-12 flex flex-col md:flex-row gap-5'>
-          <div className="left-part w-full md:w-[50%]  md:mt-2 flex flex-col  justify-center items-center">
-            <h1 className='text-3xl md:text-3xl mb-5 font-bold text-center  lg:!text-start'>
-              Earn a completion certificate
-            </h1>
-            <span className='text-center'>
-              Enhance your professional profile with an online certificate received upon project submission
-            </span>
-            <button className=' bg-red-500 px-6 py-2 rounded-3xl mt-5 items-center justify-center border-2 border-red-300 w-48'>
-              Register Now
-            </button>
-          </div>
-          {/* <div className="right-part w-full md:w-[50%]">
-            <img src={cer} alt="Certificate" className='w-full' />
-          </div> */}
+        <div className="slider-wrapper1 right">
+          <div className="i1 item1">Jio Fainance</div>
+          <div className="i1 item2">Hymarket</div>
+          <div className="i1 item3">Venkusa</div>
+          <div className="i1 item4">Openinapp</div>
+          <div className="i1 item5">Humanitarian</div>
+          <div className="i1 item6">Freightwalla</div>
+          <div className="i1 item7">Desighqandy</div>
+          <div className="i1 item8">Vankusa</div>
         </div>
-        {/* <div className='certificates w-[80%] mx-auto mt-24 flex flex-col md:flex-row gap-5 '>
-          <div className="left-part w-full md:w-[50%] flex justify-center items-center relative overflow-hidden rounded-3xl">
-            <img src={student} alt="Student" className='transform transition-transform duration-500 ease-in-out hover:scale-150 img' />
-            <div className="overlay absolute inset-0 flex justify-center items-center">
-              <h2 className='text-white text-lg md:text-2xl font-bold'>Register for Free</h2>
-            </div>
-          </div>
-          <div className="right-part w-full md:w-[50%] flex justify-center items-center relative overflow-hidden rounded-3xl">
-            <img src={contact} alt="Contact" className='transform transition-transform duration-500 ease-in-out hover:scale-150 img' />
-            <div className="overlay absolute inset-0 flex justify-center items-center">
-              <h2 className='text-white text-lg md:text-2xl font-bold'>Hire From Us</h2>
-            </div>
-          </div>
-        </div> */}
       </div>
+      <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3.13em] text-center mt-[5%]">
+        Hear from our partners
+      </h1>
+      <span className='text-sm flex justify-center w-[65%] mx-auto tracking-tight text-black sm:text-[1em]  sm:leading-[80px] mt-1 mb-10 align-middle' >Discover Inspiring Stories and Experiences Shared by Our Valued Partners</span>
+      <Carousel />
+      <div className="section is-rel">
+        <div className="padding-global-v1">
+          <div className="container"><div className="padding-vertical-60px-60px">
+            <div className="notification-bar">
+              <div className="heading-style-h5">
+                Take a look into your desired course
+                <br />
+              </div>
+              <div className="popup-open">
+                <a href="/courses" className="button w-button">View Courses</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div className=''>
+        <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3.13em] text-center mt-[5%]">
+          Why Fynd Academy?
+        </h1>
+        <div className='flex flex-col w-[85%] sm:w-[80%] sm:flex-row  mx-auto mt-10 gap-5 p-2'>
+          <div className="1 bg-red-100 p-5 rounded-3xl"><h1>Access a diverse talent pool</h1><span>Hire the best candidates from a vast talent pool with a range of skills and expertise
+          </span></div>
+          <div className="1  bg-red-100 p-5 rounded-3xl"><h1>Access a diverse talent pool</h1><span>Hire the best candidates from a vast talent pool with a range of skills and expertise
+          </span></div>
+          <div className="1  bg-red-100 p-5 rounded-3xl"><h1>Access a diverse talent pool</h1><span>Hire the best candidates from a vast talent pool with a range of skills and expertise
+          </span></div>
+        </div>
+      </div>
+
+      <div className="question-container sm:flex w-[90%] mx-auto top-0 sm:mt-24">
+        <h1 className='sticky-header w-auto text-xl md:text-5xl sm:mt-24 sm:text-3xl text-center font-bold mt-12 mb-5 '>Frequently Asked Questions</h1>
+        <Question />
+      </div>
+      {/* <Course /> */}
 
       <div
         aria-hidden="true"
