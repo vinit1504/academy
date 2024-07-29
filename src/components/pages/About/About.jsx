@@ -60,7 +60,7 @@ const About = () => {
         </div>
 
         <div className=''>
-          <h1 className="text-2xl font-bold tracking-wider text-black sm:text-[3.13em] text-center mt-[5%]">
+          <h1 className="text-2xl font-bold tracking-wider text-black sm:text-[2.50em] md:text-[3.13em]  text-center mt-[7%] my-[10%]">
             What makes us different?
           </h1>
           <div className='flex flex-col w-[100%] sm:w-[80%] sm:flex-row  mx-auto mt-10 gap-5 p-2 justify-between'>

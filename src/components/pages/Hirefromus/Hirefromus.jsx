@@ -4,12 +4,12 @@ import icon1 from './../../../assets/img/contact_icon1.svg'
 import icon2 from './../../../assets/img/contact_icon2.svg'
 import co1 from './../../../assets/img/co-1.svg'
 import co2 from './../../../assets/img/co-2.svg'
-import About from './../About/About';
+// import About from './../About/About';
 import Carousel from './../../Carousel'
 import Question from '../../Question'
 import './hire.css'
 import { IoIosArrowRoundForward } from "react-icons/io";
-import Course from './../course/Course';
+// import Course from './../course/Course';
 const Hirefromus = () => {
 
 
@@ -86,18 +86,18 @@ const Hirefromus = () => {
                   style={{ backgroundImage: `url(${post.backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                 >
                   <div className="group">
-                    <h3 className="mt-2 text-2xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600 py-4 sm:w-10 w-10">
+                    <h3 className="mt-2 text-2xl sm:text-4xl md:text-3xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600 py-4 sm:w-10 w-10">
                       <span className="absolute inset-0" />
                       {post.title}
                     </h3>
-                    <p className='text-[12px] mt-6 flex items-center '>Know More <IoIosArrowRoundForward className='text-[16px]'/></p>
+                    <p className='text-[12px] leading-10 flex items-center '>Know More <IoIosArrowRoundForward className='text-[16px]'/></p>
                   </div>
                 </article>
               ))}
             </div>
           </div>
         </div>
-        <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3.13em] text-center mt-[10%]">
+        <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3.13em] text-center mt-[10%] mb-5">
           Partner companies
         </h1>
         <span className='text-[15px] flex justify-center  tracking-tight text-black sm:text-[1.13em]  sm:leading-[80px]'>Our graduates are involved in building</span>
@@ -113,7 +113,7 @@ const Hirefromus = () => {
           <div className="i1 item8">Vankusa</div>
         </div>
       </div>
-      <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3.13em] text-center mt-[5%]">
+      <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3.13em] text-center mt-[5%] mb-7">
         Hear from our partners
       </h1>
       <span className='text-sm flex justify-center w-[65%] mx-auto tracking-tight text-black sm:text-[1em]  sm:leading-[80px] mt-1 mb-10 align-middle' >Discover Inspiring Stories and Experiences Shared by Our Valued Partners</span>
@@ -135,7 +135,7 @@ const Hirefromus = () => {
         </div>
       </div>
       <div className=''>
-        <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3.13em] text-center mt-[5%]">
+        <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3.13em] text-center mt-[5%] my-[10%]">
           Why Fynd Academy?
         </h1>
         <div className='flex flex-col w-[85%] sm:w-[80%] sm:flex-row  mx-auto mt-10 gap-5 p-2'>

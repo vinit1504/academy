@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./Silder1.css"
 
 const CarsComponent = () => {
     let sliderRef = useRef(null);
@@ -52,7 +53,7 @@ const CarsComponent = () => {
             <Slider {...settings} className='m-10'>
                 {cars.map(car => (
                     <div key={car.id} className=' m-2 p-2 item-center'>
-                        <div className='bg-purple-300 p-2 rounded-3xl h-52 w-[90%]'>                       
+                        <div className='slid p-2 border-2 rounded-3xl h-52 w-[90%]'>                       
                         <img src={car.image} alt={car.name} className="car-image mb-2" />
                         <h3>{car.name}</h3>
                         <p>{car.detail}</p>

@@ -1,8 +1,10 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import "./Navbar.css"
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { Dialog, DialogPanel } from '@headlessui/react';
+import logo from "../assets/img/logo4.png"
 
 const navigation = [
   { name: 'Courses', href: 'course' },
@@ -13,17 +15,33 @@ const navigation = [
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [show, setShow] = useState("");
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const controlNavbar = () => {
+    if (window.scrollY > 10) {
+      setShow("top");
+    } else {
+      setShow("");
+    }
+    setLastScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, [lastScrollY]);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header className={`fixed inset-x-0 top-0 z-50 ${show}`}>
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
-            {/* <span className="sr-only">Your Company</span> */}
             <img
-              alt=""
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              className="h-8 w-auto"
+              alt="Your Company"
+              src={logo}
+              className="h-8 sm:h-16 w-auto"
             />
           </a>
         </div>
@@ -31,7 +49,7 @@ const Navbar = () => {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-red-700"
           >
             <span className="sr-only">Open main menu</span>
             <FaBars aria-hidden="true" className="h-6 w-6" />
@@ -50,16 +68,16 @@ const Navbar = () => {
           </a>
         </div>
       </nav>
-      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+      <Dialog open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} className="lg:hidden">
         <div className="fixed inset-0 z-50 bg-black bg-opacity-50 transition-opacity duration-300" />
-        <DialogPanel 
+        <DialogPanel
           className={`fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
         >
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
-                alt=""
+                alt="Your Company"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                 className="h-8 w-auto"
               />
