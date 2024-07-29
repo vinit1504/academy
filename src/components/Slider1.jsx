@@ -4,6 +4,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Silder1.css"
+import sohil from "../assets/img/sohil.png"
+import mahek from "../assets/img/mahek.png"
+import chetan from "../assets/img/chetan.png"
+import krutik from "../assets/img/krutik.png"
+import divyang from "../assets/img/divyang.png"
+import darshak from "../assets/img/darshak.png"
 
 const CarsComponent = () => {
     let sliderRef = useRef(null);
@@ -40,12 +46,12 @@ const CarsComponent = () => {
     };
 
     const cars = [
-        { id: 1, name: "Tesla Model S", detail: "Electric, 396 mi range", image: "tesla.jpg" },
-        { id: 2, name: "BMW i8", detail: "Hybrid, 369 hp", image: "bmw.jpg" },
-        { id: 3, name: "Audi e-tron", detail: "Electric, 222 mi range", image: "audi.jpg" },
-        { id: 4, name: "Mercedes EQC", detail: "Electric, 259 mi range", image: "mercedes.jpg" },
-        { id: 5, name: "Jaguar I-PACE", detail: "Electric, 234 mi range", image: "jaguar.jpg" },
-        { id: 6, name: "Porsche Taycan", detail: "Electric, 227 mi range", image: "porsche.jpg" }
+        { id: 1, name: "Chetan Vasoya", detail: "Full Stack Devloper", image: chetan },
+        { id: 2, name: "Mahek Patel", detail: "Game & Flutter Devloper", image: mahek },
+        { id: 3, name: "Divyang Nagpara", detail: "ReactJS Devloper", image: divyang },
+        { id: 4, name: "Sohil Radadiya", detail: "ReactJS Devloper", image: sohil },
+        { id: 5, name: "Krutik Gabani", detail: "ReactNative Devloper", image: krutik },
+        { id: 6, name: "Darshak Vaddoriya", detail: "MERN Stack Devloper", image: darshak }
     ];
 
     return (
@@ -53,10 +59,17 @@ const CarsComponent = () => {
             <Slider {...settings} className='m-10'>
                 {cars.map(car => (
                     <div key={car.id} className=' m-2 p-2 item-center'>
-                        <div className='slid p-2 border-2 rounded-3xl h-52 w-[90%]'>                       
-                        <img src={car.image} alt={car.name} className="car-image mb-2" />
-                        <h3>{car.name}</h3>
-                        <p>{car.detail}</p>
+                        <div className='slid p-2 border-2 rounded-3xl h-52 w-[90%]'>
+                            <div className="w-full flex justify-center mt-3">
+                            <img src={car.image} alt={car.name} className="car-image mb-2 w-20 rounded-full h-20" />
+                            </div>
+                            <div className="w-full flex justify-center mt-3">
+                            <h3 className='text-sm'>{car.name}</h3>
+                            </div>
+                            {/* <p>{car.detail}</p> */}
+                            <div className="w-full flex justify-center mt-1 ">
+                            <h3 className='text-sm details'>{car.detail}</h3>
+                            </div>
                         </div>
                     </div>
                 ))}

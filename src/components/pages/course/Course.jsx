@@ -71,7 +71,7 @@ const Course = () => {
               Courses We Offer
             </h1>
             <CoursesComponent posts={posts} />
-            <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3em] text-center mt-[20%] mb-[10%]">
+            <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3em] text-center mt-[7%] mb-[7%]">
               Why Join Academy?
             </h1>
             <Join />

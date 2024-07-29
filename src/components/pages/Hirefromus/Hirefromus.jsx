@@ -4,11 +4,16 @@ import icon1 from './../../../assets/img/contact_icon1.svg'
 import icon2 from './../../../assets/img/contact_icon2.svg'
 import co1 from './../../../assets/img/co-1.svg'
 import co2 from './../../../assets/img/co-2.svg'
+import hymarket from "../../../assets/img/haymarket_1.webp"
+import pensil from '../../../assets/img/pensil_1.webp'
+import freightwalla_1 from '../../../assets/img/freightwalla_1.webp'
 // import About from './../About/About';
+// import hymarket from "../../../assets/img/haymarket_1.webp"
 import Carousel from './../../Carousel'
 import Question from '../../Question'
 import './hire.css'
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { Link } from 'react-router-dom'
 // import Course from './../course/Course';
 const Hirefromus = () => {
 
@@ -90,7 +95,7 @@ const Hirefromus = () => {
                       <span className="absolute inset-0" />
                       {post.title}
                     </h3>
-                    <p className='text-[12px] leading-10 flex items-center '>Know More <IoIosArrowRoundForward className='text-[16px]'/></p>
+                    <Link to="/pricing" className='text-[12px] leading-10 flex items-center cursor-pointer '>Know More <IoIosArrowRoundForward className='text-[16px]' /></Link>
                   </div>
                 </article>
               ))}
@@ -102,16 +107,41 @@ const Hirefromus = () => {
         </h1>
         <span className='text-[15px] flex justify-center  tracking-tight text-black sm:text-[1.13em]  sm:leading-[80px]'>Our graduates are involved in building</span>
         {/* <Join /> */}
-        <div className="slider-wrapper1 right">
-          <div className="i1 item1">Jio Fainance</div>
-          <div className="i1 item2">Hymarket</div>
-          <div className="i1 item3">Venkusa</div>
-          <div className="i1 item4">Openinapp</div>
-          <div className="i1 item5">Humanitarian</div>
-          <div className="i1 item6">Freightwalla</div>
-          <div className="i1 item7">Desighqandy</div>
-          <div className="i1 item8">Vankusa</div>
+        <div className="slider-wrapper1 right flex align-middle justify-center">
+          <div className="i1 item1">
+            <img src={hymarket} alt="" />
+          </div>
+          <div className="i1 item2">
+            <img src={pensil} alt="" />
+          </div>
+          <div className="i1 item3">
+            <img src={freightwalla_1} alt="" className='h-16' />
+          </div>
+          <div className="i1 item4">
+            <img src={hymarket} alt="" />
+          </div>
+          <div className="i1 item5">
+            <img src={pensil} alt="" />
+          </div>
+          <div className="i1 item6">
+            <img src={freightwalla_1} alt="" className='h-16' />
+          </div>
+          <div className="i1 item7">
+            <img src={hymarket} alt="" />
+          </div>
+          <div className="i1 item8">
+            <img src={pensil} alt="" />
+          </div>
         </div>
+
+
+
+
+
+
+
+
+
       </div>
       <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3.13em] text-center mt-[5%] mb-7">
         Hear from our partners
@@ -149,7 +179,7 @@ const Hirefromus = () => {
       </div>
 
       <div className="question-container sm:flex w-[90%] mx-auto top-0 sm:mt-24">
-        <h1 className='sticky-header w-auto text-xl md:text-5xl sm:mt-24 sm:text-3xl text-center font-bold mt-12 mb-5 '>Frequently Asked Questions</h1>
+        <h1 className='sticky-header w-auto text-xl md:text-5xl sm:mt-24 sm:text-3xl text-center font-bold mt-12 mb-5 !leading-snug'>Frequently Asked Questions</h1>
         <Question />
       </div>
       {/* <Course /> */}

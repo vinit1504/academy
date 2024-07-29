@@ -72,28 +72,28 @@ const About = () => {
         </div>
         <div className='flex flex-col md:flex-row w-full md:w-[90%] md:mx-auto gap-4 mt-16 justify-between items-center'>
           <div>
-          <h1 className="text-2xl font-bold tracking-wider text-black sm:text-left sm:text-[2.13em] mb-5 md:mb-5 sm:w-[100%] text-center mx-auto ">
-          Students spotlight
-          </h1>
-          <span className='w-[80%] mx-auto px-4 flex justify-center '>Celebrating the Success Stories of Our Graduates Across Leading Companies!</span><br />
-          </div>  
+            <h1 className="text-2xl font-bold tracking-wider text-black sm:text-left sm:text-[2.13em] mb-5 md:mb-5 sm:w-[100%] text-center mx-auto ">
+              Students spotlight
+            </h1>
+            <span className='w-[80%] mx-auto px-4 flex justify-center '>Celebrating the Success Stories of Our Graduates Across Leading Companies!</span><br />
+          </div>
           <div className='w-full md:w-[70%] tracking-wider  items-center '>
-          <Slider1 />
+            <Slider1 />
           </div>
         </div>
         <div className="mx-auto max-w-6xl header mt-12">
           <div className="text-center">
             <h1 className="text-3xl font-bold  text-red-600 sm:text-[3em] tracking-wide w-[100%] sm:w-[80%] mx-auto sm:leading-[50px]">
-            Kickstart your career with Fynd Academy
+              Kickstart your career with Fynd Academy
             </h1>
             <p className="mt-6 text-[1rem] leading-6 text-gray-600 sm:w-[60%] mx-auto py-6 px-6 ">
-            Decode the fundamentals of coding, product design and other interesting fields. Work on live projects and feel the flow of real-time problem solving with Fynd Academy
+              Decode the fundamentals of coding, product design and other interesting fields. Work on live projects and feel the flow of real-time problem solving with Fynd Academy
             </p>
           </div>
           <div className=" flex items-center justify-center gap-x-6 py-5">
             <a
               href="#"
-              className=" bg-red-600 px-3.5 py-2.5 text-sm font-semibold rounded-3xl text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className=" bg-red-600 px-3.5 py-2.5 text-sm font-semibold rounded-3xl text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Register Now
             </a>

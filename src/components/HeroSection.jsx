@@ -24,7 +24,9 @@ import icon8 from '../assets/img/doctors-office.png';
 import comingsoon from '../assets/img/comingsoon.jpg';
 import student from '../assets/img/img8.webp';
 import contact from '../assets/img/img9.webp';
+import logo from '../assets/img/logo4.png';
 import CoursesComponent from './CoursesComponent';
+import Slider1 from "../components/Slider1"
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 // import sliderlogo1 from '../assets/img/jio_logo.png';
@@ -119,9 +121,7 @@ const HeroSection = () => {
 
 
 
-                    <div className="circle gradient-green transform translate-y-36 translate-x-28" ref={circle}>
-                      {/* <img src={icon1} alt="" /> */}
-                    </div>
+                    
 
 
 
@@ -207,69 +207,69 @@ const HeroSection = () => {
 
 
             <div class="slider-wrapper left">
-                <div class="item item1">
+                <div class="item item1 rounded-3xl">
                     <div className="profile">
                         <img src={icon1} alt="" />
                     </div>
-                    <div class="cs-text-16px flex justify-center text-white">Avijeet Shrivastava</div>
-                    <div class="cs-text-16px flex justify-center text-white">is in </div>
-                    <div class="company-logo"><img src="https://cdn.prod.website-files.com/603683469df97967298e6e81/6500104384935aa82541c235_Fynd.webp" loading="lazy" alt="fynd academy logo" /></div>
+                    <div class="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
+                    <div class="cs-text-16px flex justify-center ">is in </div>
+                    <div class="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
                 </div>
                 <div class="item item2">
                     <div className="profile">
                         <img src={icon1} alt="" />
                     </div>
-                    <div class="cs-text-16px flex justify-center text-white">Avijeet Shrivastava</div>
-                    <div class="cs-text-16px flex justify-center text-white">is in </div>
-                    <div class="company-logo"><img src="https://cdn.prod.website-files.com/603683469df97967298e6e81/6500104384935aa82541c235_Fynd.webp" loading="lazy" alt="fynd academy logo" /></div>
+                    <div class="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
+                    <div class="cs-text-16px flex justify-center ">is in </div>
+                    <div class="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
                 </div>
                 <div class="item item3">
                     <div className="profile">
                         <img src={icon1} alt="" />
                     </div>
-                    <div class="cs-text-16px flex justify-center text-white">Avijeet Shrivastava</div>
-                    <div class="cs-text-16px flex justify-center text-white">is in </div>
-                    <div class="company-logo"><img src="https://cdn.prod.website-files.com/603683469df97967298e6e81/6500104384935aa82541c235_Fynd.webp" loading="lazy" alt="fynd academy logo" /></div>
+                    <div class="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
+                    <div class="cs-text-16px flex justify-center ">is in </div>
+                    <div class="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
                 </div>
                 <div class="item item4">
                     <div className="profile">
                         <img src={icon1} alt="" />
                     </div>
-                    <div class="cs-text-16px flex justify-center text-white">Avijeet Shrivastava</div>
-                    <div class="cs-text-16px flex justify-center text-white">is in </div>
-                    <div class="company-logo"><img src="https://cdn.prod.website-files.com/603683469df97967298e6e81/6500104384935aa82541c235_Fynd.webp" loading="lazy" alt="fynd academy logo" /></div>
+                    <div class="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
+                    <div class="cs-text-16px flex justify-center ">is in </div>
+                    <div class="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
                 </div>
                 <div class="item item5">
                     <div className="profile">
                         <img src={icon1} alt="" />
                     </div>
-                    <div class="cs-text-16px flex justify-center text-white">Avijeet Shrivastava</div>
-                    <div class="cs-text-16px flex justify-center text-white">is in </div>
-                    <div class="company-logo"><img src="https://cdn.prod.website-files.com/603683469df97967298e6e81/6500104384935aa82541c235_Fynd.webp" loading="lazy" alt="fynd academy logo" /></div>
+                    <div class="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
+                    <div class="cs-text-16px flex justify-center ">is in </div>
+                    <div class="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
                 </div>
                 <div class="item item6">
                     <div className="profile">
                         <img src={icon1} alt="" />
                     </div>
-                    <div class="cs-text-16px flex justify-center text-white">Avijeet Shrivastava</div>
-                    <div class="cs-text-16px flex justify-center text-white">is in </div>
-                    <div class="company-logo"><img src="https://cdn.prod.website-files.com/603683469df97967298e6e81/6500104384935aa82541c235_Fynd.webp" loading="lazy" alt="fynd academy logo" /></div>
+                    <div class="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
+                    <div class="cs-text-16px flex justify-center ">is in </div>
+                    <div class="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
                 </div>
                 <div class="item item7">
                     <div className="profile">
                         <img src={icon1} alt="" />
                     </div>
-                    <div class="cs-text-16px flex justify-center text-white">Avijeet Shrivastava</div>
-                    <div class="cs-text-16px flex justify-center text-white">is in </div>
-                    <div class="company-logo"><img src="https://cdn.prod.website-files.com/603683469df97967298e6e81/6500104384935aa82541c235_Fynd.webp" loading="lazy" alt="fynd academy logo" /></div>
+                    <div class="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
+                    <div class="cs-text-16px flex justify-center ">is in </div>
+                    <div class="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
                 </div>
                 <div class="item item8">
                     <div className="profile">
                         <img src={icon1} alt="" />
                     </div>
-                    <div class="cs-text-16px flex justify-center text-white">Avijeet Shrivastava</div>
-                    <div class="cs-text-16px flex justify-center text-white">is in </div>
-                    <div class="company-logo"><img src="https://cdn.prod.website-files.com/603683469df97967298e6e81/6500104384935aa82541c235_Fynd.webp" loading="lazy" alt="fynd academy logo" /></div>
+                    <div class="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
+                    <div class="cs-text-16px flex justify-center ">is in </div>
+                    <div class="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
                 </div>
             </div>
 
@@ -279,29 +279,32 @@ const HeroSection = () => {
 
 
 
+
+
             <div class="padding-global-v1">
                 <div class="container">
-                    <div class="padding-vertical-60px-60px top-bottom-60pc"><div class="couse-banner">
-                        <img src={cap} loading="lazy" alt="cap masters images" class="cap" />
-                        <div class="block-new">
-                            <h2 class="heading-60px sm:text-sm mb-5">
-                                Get a chance to win upto
-                            </h2>
-                            <h2 class="heading-60px ffd140">100% Scholarship
+                    <div class="padding-vertical-60px-60px top-bottom-60pc">
+                        <div class="couse-banner">
+                            <img src={cap} loading="lazy" alt="cap masters images" class="cap" />
+                            <div class="block-new">
+                                <h2 class="heading-60px sm:text-sm mb-5">
+                                    Get a chance to win upto
+                                </h2>
+                                <h2 class="heading-60px ffd140">100% Scholarship
 
-                            </h2>
-                            <div class="tp-bt-24px">
-                                <div class="custom-32px">
-                                    Take the Python scholarship test now!
+                                </h2>
+                                <div class="tp-bt-24px">
+                                    <div class="custom-32px">
+                                        Take the Python scholarship test now!
+                                    </div>
+                                </div>
+                                <div class="div-block-508">
+                                    <a data-w-id="a31458a0-b47f-8541-e513-26523ce7b379" href="#" class="button-white w-inline-block">
+                                        <div>Register Now</div>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="div-block-508">
-                                <a data-w-id="a31458a0-b47f-8541-e513-26523ce7b379" href="#" class="button-white w-inline-block">
-                                    <div>Register Now</div>
-                                </a>
-                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
@@ -371,12 +374,12 @@ const HeroSection = () => {
                 <div class="text-align-center">
 
 
-                    <div class="max-width-large align-center">
+                    <div class="max-width-large align-center pb-12">
                         <div class="margin-bottom">
 
                             <h2 class="heading-style-h2">From trainees to titans</h2>
                             <div class="margin-top-20px">
-                                <div class="text-18px-v1">Hear from our amazing students who chose us</div>
+                                <div class="text-16px-v1 sm:text-2xl">Hear from our amazing students who chose us</div>
                             </div>
                         </div>
                     </div>
@@ -411,6 +414,10 @@ const HeroSection = () => {
                     </Slider>
                 </div>
             </div> */}
+
+            <div className='w-full  tracking-wider  items-center '>
+                <Slider1 />
+            </div>
 
 
             <div class="section is-rel">

@@ -1,11 +1,14 @@
 .slider-wrapper1 {
     width: 90%;
+    display: flex;
+    align-items: center;
     max-width: 1536px;
-    margin-inline: auto;
+    /* margin-inline: auto; */
     position: relative;
     height: 100px;
     margin-top: 5rem;
     overflow: hidden;
+    padding-left: 50px;
     mask-image: linear-gradient(to right,
             rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 1) 20%,
@@ -30,6 +33,15 @@
     height: 50px;
     border-radius: 6px;
     position: absolute;
+}
+.item1 img{
+    padding-top: 10px;
+}
+.item4 img{
+    padding-top: 10px;
+}
+.item7 img{
+    padding-top: 10px;
 }
 
 .right .i1 {
@@ -57,7 +69,6 @@
     animation-delay: calc((-10s / 8) * 3);
 }
 
-.left .item6,
 .right .item6 {
     animation-delay: calc((-10s / 8) * 2);
 }

@@ -43,6 +43,7 @@ html.w-mod-touch * {
 .padding-global-v1 {
     padding-left: 7.75em;
     padding-right: 7.75em;
+    /* margin-top: 50px; */
 }
 
 .container {
@@ -246,7 +247,7 @@ html.w-mod-touch * {
     max-width: 1536px;
     /* margin-inline: auto; */
     position: relative;
-    height: 200px;
+    height: 250px;
     margin-top: 5rem;
     overflow: hidden !important;
     mask-image: linear-gradient(to right,
@@ -262,7 +263,7 @@ html.w-mod-touch * {
         max-width: 1536px;
         margin-inline: 40px;
         position: relative;
-        height: 200px;
+        height: 250px;
         margin-top: 5rem;
         overflow: hidden !important;
         mask-image: linear-gradient(to right,
@@ -279,7 +280,7 @@ html.w-mod-touch * {
         max-width: 1536px;
         margin-inline: 45px;
         position: relative;
-        height: 200px;
+        height: 250px;
         margin-top: 5rem;
         overflow: hidden !important;
         mask-image: linear-gradient(to right,
@@ -296,7 +297,7 @@ html.w-mod-touch * {
         max-width: 1536px;
         margin-inline: auto;
         position: relative;
-        height: 200px;
+        height: 250px;
         margin-top: 5rem;
         overflow: hidden !important;
         mask-image: linear-gradient(to right,
@@ -321,11 +322,11 @@ html.w-mod-touch * {
 
 .item {
     width: 200px;
-    height: 500px;
-    background-color: #6a5f5f;
-    border-radius: 6px;
+    height:240px !important;
+    background-color: rgb(236, 231, 231);
+    border-radius: 6px !important;
     position: absolute;
-
+    color: black
 }
 
 .left .item {
@@ -346,6 +347,7 @@ html.w-mod-touch * {
 .left .item3,
 .right .item3 {
     animation-delay: calc((-10s / 8) * 5);
+    border-radius: 10px;
 }
 
 .left .item4,
@@ -865,7 +867,7 @@ i {
     max-width: 1536px;
     margin-inline: auto;
     position: relative;
-    height: 100px;
+    height: 250px;
     margin-top: 5rem;
     overflow: hidden;
     mask-image: linear-gradient(to right,
@@ -969,7 +971,7 @@ i {
     text-align: center;
     font-weight: 600;
     margin: 10px;
-    background: linear-gradient(217deg, rgba(255, 177, 177, 0.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(46, 49, 46, 0.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(137, 137, 204, 0.8), rgba(0,0,255,0) 70.71%);
+    background: linear-gradient(217deg, rgba(255, 177, 177, 0.8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(46, 49, 46, 0.8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(137, 137, 204, 0.8), rgba(0, 0, 255, 0) 70.71%);
 }

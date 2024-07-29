@@ -1,6 +1,6 @@
 import React from 'react'
 import "./footer.css"
-import logo from "../assets/img/logo.svg"
+import logo from "../assets/img/logo4.png"
 import {
   FaFacebookF,
   // FaTwitter,
@@ -19,8 +19,8 @@ const Footer = () => {
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="footer-content">
-        <div className=" footer-logo">
-          <img src={logo} alt="Fynd Academy" />
+        <div className=" footer-logo w-20 flex justify-center">
+          <img src={logo} alt="Fynd Academy" className='w-10 h-20' />
         </div>
         <p className="footer-description">
           Fynd Academy is an accelerated learning program for freshers and experienced professionals to build their skills and meaningfully contribute at work from day one.
