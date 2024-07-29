@@ -36,12 +36,35 @@
 }
 .item1 img{
     padding-top: 10px;
+    width: 80%;
+}
+.item2 img{
+    /* padding-top: 10px; */
+    width: 70%;
+}
+.item3 img{
+    /* padding-top: 10px; */
+    width: 80%;
 }
 .item4 img{
     padding-top: 10px;
+    width: 80%;
+}
+.item5 img{
+    /* padding-top: 10px; */
+    width: 70%;
+}
+.item6 img{
+    /* padding-top: 10px; */
+    width: 80%;
 }
 .item7 img{
     padding-top: 10px;
+    width: 80%;
+}
+.item8 img{
+    /* padding-top: 10px; */
+    width: 70%;
 }
 
 .right .i1 {
