@@ -11,6 +11,9 @@ import icon1 from "../assets/img/img1.svg"
 import icon2 from "../assets/img/img2.svg"
 import icon3 from "../assets/img/img3.svg"
 import icon4 from "../assets/img/img4.svg"
+import hymarket from "../assets/img/haymarket_1.webp"
+import pensil from '../assets/img/pensil_1.webp'
+import freightwalla_1 from '../assets/img/freightwalla_1.webp'
 import backgroundImage from '../assets/img/footerimg.svg';
 import cap from '../assets/img/img5.svg';
 import co1 from '../assets/img/co-1.svg';
@@ -169,8 +172,8 @@ const HeroSection = () => {
                 className="section bg-contain bg-no-repeat w-full min-h-screen flex flex-col justify-center items-center"
                 style={{ backgroundImage: `url(${backgroundImage})` }}
             >
-                <div class="flex justify-center items-center">
-                    <h2 class="text-[#0D0029CC] mt-4 mb-0 text-2xl font-bold leading-tight lg:text-6xl">
+                <div className="flex justify-center items-center">
+                    <h2 className="text-[#0D0029CC] mt-4 mb-0 text-2xl font-bold leading-tight lg:text-6xl">
                         Courses we offer
                     </h2>
                 </div>
@@ -178,25 +181,25 @@ const HeroSection = () => {
             </section>
 
 
-            <div class="section is-rel">
-                <div class="padding-global-v1">
-                    <div class="container"><div class="padding-vertical-60px-60px">
-                        <div class="notification-bar">
-                            <div class="heading-style-h5">
+            <div className="section is-rel">
+                <div className="padding-global-v1">
+                    <div className="container"><div className="padding-vertical-60px-60px">
+                        <div className="notification-bar">
+                            <div className="heading-style-h5">
                                 Take a look into your desired course
                                 <br />
                             </div>
-                            <div class="popup-open">
-                                <a href="/courses" class="button w-button">View Courses</a>
+                            <div className="popup-open">
+                                <a href="/courses" className="button w-button">View Courses</a>
                             </div>
                         </div>
                     </div>
                     </div>
                 </div>
             </div>
-            <div class="margin-bottom is-32px">
-                <div class="heading-block max-800px">
-                    <h2 class="heading-style-h2 text-align-center">
+            <div className="margin-bottom is-32px">
+                <div className="heading-block max-800px">
+                    <h2 className="heading-style-h2 text-align-center">
                         Fynd Academy graduates <br />have successfully landed their dream positions in</h2>
                 </div>
             </div>
@@ -206,70 +209,70 @@ const HeroSection = () => {
 
 
 
-            <div class="slider-wrapper left">
-                <div class="item item1 rounded-3xl">
+            <div className="slider-wrapper left">
+                <div className="item ite1 rounded-3xl">
                     <div className="profile">
-                        <img src={icon1} alt="" />
+                        <img src={icon1} alt="" className='w-20' />
                     </div>
-                    <div class="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
-                    <div class="cs-text-16px flex justify-center ">is in </div>
-                    <div class="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
+                    <div className="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
+                    <div className="cs-text-16px flex justify-center ">is in </div>
+                    <div className="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
                 </div>
-                <div class="item item2">
+                <div className="item ite2">
                     <div className="profile">
                         <img src={icon1} alt="" />
                     </div>
-                    <div class="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
-                    <div class="cs-text-16px flex justify-center ">is in </div>
-                    <div class="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
+                    <div className="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
+                    <div className="cs-text-16px flex justify-center ">is in </div>
+                    <div className="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
                 </div>
-                <div class="item item3">
+                <div className="item ite3">
                     <div className="profile">
                         <img src={icon1} alt="" />
                     </div>
-                    <div class="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
-                    <div class="cs-text-16px flex justify-center ">is in </div>
-                    <div class="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
+                    <div className="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
+                    <div className="cs-text-16px flex justify-center ">is in </div>
+                    <div className="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
                 </div>
-                <div class="item item4">
+                <div className="item ite4">
                     <div className="profile">
                         <img src={icon1} alt="" />
                     </div>
-                    <div class="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
-                    <div class="cs-text-16px flex justify-center ">is in </div>
-                    <div class="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
+                    <div className="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
+                    <div className="cs-text-16px flex justify-center ">is in </div>
+                    <div className="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
                 </div>
-                <div class="item item5">
+                <div className="item ite5">
                     <div className="profile">
                         <img src={icon1} alt="" />
                     </div>
-                    <div class="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
-                    <div class="cs-text-16px flex justify-center ">is in </div>
-                    <div class="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
+                    <div className="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
+                    <div className="cs-text-16px flex justify-center ">is in </div>
+                    <div className="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
                 </div>
-                <div class="item item6">
+                <div className="item ite6">
                     <div className="profile">
                         <img src={icon1} alt="" />
                     </div>
-                    <div class="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
-                    <div class="cs-text-16px flex justify-center ">is in </div>
-                    <div class="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
+                    <div className="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
+                    <div className="cs-text-16px flex justify-center ">is in </div>
+                    <div className="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
                 </div>
-                <div class="item item7">
+                <div className="item ite7">
                     <div className="profile">
                         <img src={icon1} alt="" />
                     </div>
-                    <div class="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
-                    <div class="cs-text-16px flex justify-center ">is in </div>
-                    <div class="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
+                    <div className="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
+                    <div className="cs-text-16px flex justify-center ">is in </div>
+                    <div className="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
                 </div>
-                <div class="item item8">
+                <div className="item ite8">
                     <div className="profile">
                         <img src={icon1} alt="" />
                     </div>
-                    <div class="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
-                    <div class="cs-text-16px flex justify-center ">is in </div>
-                    <div class="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
+                    <div className="cs-text-16px flex justify-center ">Avijeet Shrivastava</div>
+                    <div className="cs-text-16px flex justify-center ">is in </div>
+                    <div className="company-logo flex justify-cente py-2"><img src={logo} loading="lazy" alt="fynd academy logo" className='h-16 w-10 px-3' /></div>
                 </div>
             </div>
 
@@ -281,25 +284,25 @@ const HeroSection = () => {
 
 
 
-            <div class="padding-global-v1">
-                <div class="container">
-                    <div class="padding-vertical-60px-60px top-bottom-60pc">
-                        <div class="couse-banner">
-                            <img src={cap} loading="lazy" alt="cap masters images" class="cap" />
-                            <div class="block-new">
-                                <h2 class="heading-60px sm:text-sm mb-5">
+            <div className="padding-global-v1">
+                <div className="container">
+                    <div className="padding-vertical-60px-60px top-bottom-60pc">
+                        <div className="couse-banner">
+                            <img src={cap} loading="lazy" alt="cap masters images" className="cap" />
+                            <div className="block-new">
+                                <h2 className="heading-60px sm:text-sm mb-5">
                                     Get a chance to win upto
                                 </h2>
-                                <h2 class="heading-60px ffd140">100% Scholarship
+                                <h2 className="heading-60px ffd140">100% Scholarship
 
                                 </h2>
-                                <div class="tp-bt-24px">
-                                    <div class="custom-32px">
+                                <div className="tp-bt-24px">
+                                    <div className="custom-32px">
                                         Take the Python scholarship test now!
                                     </div>
                                 </div>
-                                <div class="div-block-508">
-                                    <a data-w-id="a31458a0-b47f-8541-e513-26523ce7b379" href="#" class="button-white w-inline-block">
+                                <div className="div-block-508">
+                                    <a data-w-id="a31458a0-b47f-8541-e513-26523ce7b379" href="#" className="button-white w-inline-block">
                                         <div>Register Now</div>
                                     </a>
                                 </div>
@@ -310,56 +313,56 @@ const HeroSection = () => {
             </div>
 
 
-            <div class="section2">
-                <div class="px-4 sm:px-0">
-                    <div class="container">
-                        <div class="py-10 sm:py-24 px-0 lg:px-28">
-                            <div class="flex flex-col lg:flex-row lg:gap-8 ">
-                                <div class="lg:max-w-lg ">
-                                    <img src={img1} class="w-full h-full rounded-lg" />
+            <div className="section2">
+                <div className="px-4 sm:px-0">
+                    <div className="container">
+                        <div className="py-10 sm:py-24 px-0 lg:px-28">
+                            <div className="flex flex-col lg:flex-row lg:gap-8 ">
+                                <div className="lg:max-w-lg ">
+                                    <img src={img1} className="w-full h-full rounded-lg" />
                                 </div>
-                                <div class="lg:max-w-md mt-8 lg:mt-0 im">
-                                    <div class="mb-16">
+                                <div className="lg:max-w-md mt-8 lg:mt-0 im">
+                                    <div className="mb-16">
                                         <div>
-                                            <h2 class="text-3xl font-bold">Get all the support you need</h2>
+                                            <h2 className="text-3xl font-bold">Get all the support you need</h2>
                                         </div>
                                     </div>
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
-                                        <div class="max-w-xs mx-auto">
-                                            <div class="w-16 h-16">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
+                                        <div className="max-w-xs mx-auto">
+                                            <div className="w-16 h-16">
                                                 <img src={icon5} alt="" />
                                             </div>
-                                            <div class="mt-10 mb-2">
-                                                <div class="text-xl font-semibold">Community</div>
+                                            <div className="mt-10 mb-2">
+                                                <div className="text-xl font-semibold">Community</div>
                                             </div>
-                                            <div class="text-base">Network with like-minded peers, share knowledge and explore growth opportunities</div>
+                                            <div className="text-base">Network with like-minded peers, share knowledge and explore growth opportunities</div>
                                         </div>
-                                        <div class="max-w-xs mx-auto">
-                                            <div class="w-16 h-16">
+                                        <div className="max-w-xs mx-auto">
+                                            <div className="w-16 h-16">
                                                 <img src={icon6} alt="" />
                                             </div>
-                                            <div class="mt-10 mb-2">
-                                                <div class="text-xl font-semibold">Interactive Portfolio</div>
+                                            <div className="mt-10 mb-2">
+                                                <div className="text-xl font-semibold">Interactive Portfolio</div>
                                             </div>
-                                            <div class="text-base">Present projects that demonstrate your skills and expertise to enhance your visibility to recruiters</div>
+                                            <div className="text-base">Present projects that demonstrate your skills and expertise to enhance your visibility to recruiters</div>
                                         </div>
-                                        <div class="max-w-xs mx-auto">
-                                            <div class="w-16 h-16">
+                                        <div className="max-w-xs mx-auto">
+                                            <div className="w-16 h-16">
                                                 <img src={icon7} alt="" />
                                             </div>
-                                            <div class="mt-10 mb-2">
-                                                <div class="text-xl font-semibold">Resource Library</div>
+                                            <div className="mt-10 mb-2">
+                                                <div className="text-xl font-semibold">Resource Library</div>
                                             </div>
-                                            <div class="text-base">Access our resource library to boost your expertise and succeed in your academic and professional pursuits</div>
+                                            <div className="text-base">Access our resource library to boost your expertise and succeed in your academic and professional pursuits</div>
                                         </div>
-                                        <div class="max-w-xs mx-auto">
-                                            <div class="w-16 h-16">
+                                        <div className="max-w-xs mx-auto">
+                                            <div className="w-16 h-16">
                                                 <img src={icon8} alt="" />
                                             </div>
-                                            <div class="mt-10 mb-2">
-                                                <div class="text-xl font-semibold">Career Assistance</div>
+                                            <div className="mt-10 mb-2">
+                                                <div className="text-xl font-semibold">Career Assistance</div>
                                             </div>
-                                            <div class="text-base">Guidance to apply for exciting career opportunities through our expansive network</div>
+                                            <div className="text-base">Guidance to apply for exciting career opportunities through our expansive network</div>
                                         </div>
                                     </div>
                                 </div>
@@ -370,16 +373,16 @@ const HeroSection = () => {
             </div>
 
 
-            <div class="margin-bottom">
-                <div class="text-align-center">
+            <div className="margin-bottom">
+                <div className="text-align-center">
 
 
-                    <div class="max-width-large align-center pb-12">
-                        <div class="margin-bottom">
+                    <div className="max-width-large align-center pb-12">
+                        <div className="margin-bottom">
 
-                            <h2 class="heading-style-h2">From trainees to titans</h2>
-                            <div class="margin-top-20px">
-                                <div class="text-16px-v1 sm:text-2xl">Hear from our amazing students who chose us</div>
+                            <h2 className="heading-style-h2">From trainees to titans</h2>
+                            <div className="margin-top-20px">
+                                <div className="text-16px-v1 sm:text-2xl">Hear from our amazing students who chose us</div>
                             </div>
                         </div>
                     </div>
@@ -420,16 +423,16 @@ const HeroSection = () => {
             </div>
 
 
-            <div class="section is-rel">
-                <div class="padding-global-v1">
-                    <div class="container"><div class="padding-vertical-60px-60px">
-                        <div class="notification-bar">
-                            <div class="heading-style-h5">
+            <div className="section is-rel">
+                <div className="padding-global-v1">
+                    <div className="container"><div className="padding-vertical-60px-60px">
+                        <div className="notification-bar">
+                            <div className="heading-style-h5">
                                 Take a look into your desired course
                                 <br />
                             </div>
-                            <div class="popup-open">
-                                <a href="/courses" class="button w-button">View Courses</a>
+                            <div className="popup-open">
+                                <a href="/courses" className="button w-button">View Courses</a>
                             </div>
                         </div>
                     </div>
@@ -453,22 +456,38 @@ const HeroSection = () => {
 
 
 
-            <div class="max-36em"><h2 class="heading-style-h2 text-2xl sm:text-4xl">Our partner companies</h2></div>
+            <div className="max-36em"><h2 className="heading-style-h2 text-2xl sm:text-4xl">Our partner companies</h2></div>
 
-            <div class="slider-wrapper1 right">
-                <div class="i1 item1">Jio Fainance</div>
-                <div class="i1 item2">Hymarket</div>
-                <div class="i1 item3">Venkusa</div>
-                <div class="i1 item4">Openinapp</div>
-                <div class="i1 item5">Humanitarian</div>
-                <div class="i1 item6">Freightwalla</div>
-                <div class="i1 item7">Desighqandy</div>
-                <div class="i1 item8">Vankusa</div>
+            <div className="slider-wrapper1 right">
+            <div className="i1 item1">
+            <img src={hymarket} alt="" />
+          </div>
+          <div className="i1 item2">
+            <img src={pensil} alt="" />
+          </div>
+          <div className="i1 item3">
+            <img src={freightwalla_1} alt="" className='h-16' />
+          </div>
+          <div className="i1 item4">
+            <img src={hymarket} alt="" />
+          </div>
+          <div className="i1 item5">
+            <img src={pensil} alt="" />
+          </div>
+          <div className="i1 item6">
+            <img src={freightwalla_1} alt="" className='h-16' />
+          </div>
+          <div className="i1 item7">
+            <img src={hymarket} alt="" />
+          </div>
+          <div className="i1 item8">
+            <img src={pensil} alt="" />
+          </div>
             </div>
 
 
 
-            <div className='certificates w-[80%] mx-auto mt-0 flex flex-col md:flex-row gap-5 '>
+            <div className='certificates w-[80%] mx-auto mt-24 flex flex-col md:flex-row gap-5 '>
                 <div className="left-part w-full md:w-[50%] flex justify-center items-center relative overflow-hidden rounded-3xl">
                     <img src={student} alt="Student" className='transform transition-transform duration-500 ease-in-out hover:scale-150 img' />
                     <div className="overlay absolute inset-0 flex justify-center items-center">

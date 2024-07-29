@@ -334,43 +334,41 @@ html.w-mod-touch * {
     animation: scrollLeft 10s linear infinite;
 }
 
-.left .item1,
-.right .item1 {
+.left .ite1 {
     animation-delay: calc((-10s / 8) * 7);
 }
 
-.left .item2,
-.right .item2 {
+.left .ite2{
     animation-delay: calc((-10s / 8) * 6);
 }
 
-.left .item3,
+.left .ite3,
 .right .item3 {
     animation-delay: calc((-10s / 8) * 5);
     border-radius: 10px;
 }
 
-.left .item4,
+.left .ite4,
 .right .item4 {
     animation-delay: calc((-10s / 8) * 4);
 }
 
-.left .item5,
+.left .ite5,
 .right .item5 {
     animation-delay: calc((-10s / 8) * 3);
 }
 
-.left .item6,
+.left .ite6,
 .right .item6 {
     animation-delay: calc((-10s / 8) * 2);
 }
 
-.left .item7,
+.left .ite7,
 .right .item7 {
     animation-delay: calc((-10s / 8) * 1);
 }
 
-.left .item8,
+.left .ite8,
 .right .item8 {
     animation-delay: calc((-10s / 8) * 0);
 }
