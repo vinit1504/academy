@@ -1,33 +1,9 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io'; // Ensure you have react-icons installed
 
-const sectionData = [
-  {
-    key: 'foundation',
-    title: 'Foundations of JavaScript',
-    description: 'Establish a strong foundation in JavaScript, covering fundamentals to advanced concepts necessary for web development.',
-    subsections: [
-      {
-        key: 'fundamentals',
-        title: 'JavaScript Fundamentals',
-        description: 'Learn the basics of JavaScript, including variables, functions, and event handling.',
-      },
-      {
-        key: 'advanced',
-        title: 'Advanced JavaScript Concepts',
-        description: 'Dive deeper into JavaScript with advanced topics like closures, asynchronous programming, and more.',
-      },
-      {
-        key: 'htmlCss',
-        title: 'HTML and CSS Fundamentals',
-        description: 'Learn the basics of HTML and CSS to create and style web pages.',
-      },
-    ],
-  },
-];
-
-const Accordion = () => {
+const Accordion = ({ data }) => {
   const [openSections, setOpenSections] = useState({});
 
   const toggleSection = (section) => {
@@ -36,6 +12,10 @@ const Accordion = () => {
       [section]: !prevState[section],
     }));
   };
+
+  // Use post.sections if available, otherwise default to an empty array
+  const sectionData = data || [];
+  console.log("hello", sectionData);
 
   return (
     <div className="w-[100%] sm:w-[50%] mx-auto mt-10 p-4 rounded-lg shadow-lg">

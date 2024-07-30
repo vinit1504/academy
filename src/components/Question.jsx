@@ -42,7 +42,9 @@ const Question = () => {
                 <IoIosArrowUp />
               ) : (
                 <IoIosArrowDown />
-              )}
+              )}    
+
+              
             </span>
           </div>
           {activeIndex === index && (

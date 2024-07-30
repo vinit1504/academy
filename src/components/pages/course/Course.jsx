@@ -11,30 +11,97 @@ import Join from './../../Join';
 import cer from './../../../assets/img/certificat.jpg'
 import student from './../../../assets/img/img8.jpg'
 import contact from './../../../assets/img/img9.jpg'
+import data from './../../../data'
 
 const Course = () => {
 
-  const posts = [
-    {
-      id: 1,
-      title: 'Full Stack JvaScript',
-      description: 'Explore the latest trends and technologies in web development.',
-      backgroundImage: co1,
-      img: co1
-    },
-    {
-      id: 2,
-      title: 'Mastering React',
-      description: 'he world cant live without mobile and web applications in this day and age. Everything is digitized, from booking cabs to ordering food to make bank transactions. Thanks to the efficient frameworks that provide a seamless user experience. One such robust frontend library is React. This tutorial on ‘what is React’ will help you understand the librarys fundamentals and work with a simple demo',
-      backgroundImage: co2
-    },
-    {
-      id: 3,
-      title: 'Mastering React',
-      description: 'he world cant live without mobile and web applications in this day and age. Everything is digitized, from booking cabs to ordering food to make bank transactions. Thanks to the efficient frameworks that provide a seamless user experience. One such robust frontend library is React. This tutorial on ‘what is React’ will help you understand the librarys fundamentals and work with a simple demo',
-      backgroundImage: co2
-    },
-  ];
+      // const posts = [
+      //   {
+      //     id: 1,
+      //     title: 'Full Stack JavaScript',
+      //     description: 'Explore the latest trends and technologies in web development.',
+      //     backgroundImage: co1, // Replace with actual path
+      //     img: co1  // Replace with actual path
+      //   },
+      //   {
+      //     id: 2,
+      //     title: 'React JS',
+      //     description: 'The world can’t live without mobile and web applications in this day and age. Everything is digitized, from booking cabs to ordering food to making bank transactions. Thanks to efficient frameworks that provide a seamless user experience. One such robust frontend library is React. This tutorial on ‘what is React’ will help you understand the library’s fundamentals and work with a simple demo.',
+      //     backgroundImage: co1, // Replace with actual path
+      //     img: co1 // Replace with actual path
+      //   },
+      //   {
+      //     id: 3,
+      //     title: 'React Native',
+      //     description: 'React Native allows you to build mobile applications using React. Learn to develop high-quality mobile apps for both iOS and Android platforms with this versatile framework.',
+      //     backgroundImage: co1, // Replace with actual path
+      //     img: co1 // Replace with actual path
+      //   },
+      //   {
+      //     id: 4,
+      //     title: 'React Native and Node',
+      //     description: 'Combine React Native for mobile app development with Node.js for server-side scripting to create a comprehensive full-stack development experience.',
+      //     backgroundImage: co1, // Replace with actual path
+      //     img: co1// Replace with actual path
+      //   },
+      //   {
+      //     id: 5,
+      //     title: 'Node.js',
+      //     description: 'Node.js enables you to build scalable network applications with ease. Learn the essentials of this powerful server-side platform and how to use it for efficient backend development.',
+      //     backgroundImage: co1, // Replace with actual path
+      //     img: co1 // Replace with actual path
+      //   },
+      //   {
+      //     id: 6,
+      //     title: 'Flutter',
+      //     description: 'Flutter is a UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase. Explore its capabilities to create visually appealing apps with a smooth user experience.',
+      //     backgroundImage: co1, // Replace with actual path
+      //     img: co1 // Replace with actual path
+      //   },
+      //   {
+      //     id: 7,
+      //     title: 'Python Full Stack',
+      //     description: 'Master the Python programming language and its application in full-stack development. Learn how to build both front-end and back-end systems using popular Python frameworks and libraries.',
+      //     backgroundImage: co1, // Replace with actual path
+      //     img: co1 // Replace with actual path
+      //   },
+      //   {
+      //     id: 8,
+      //     title: 'UI/UX Design',
+      //     description: 'Explore the principles of User Interface and User Experience design. Understand how to create user-centered designs that provide engaging and intuitive interactions.',
+      //     backgroundImage: co1, // Replace with actual path
+      //     img: co1 // Replace with actual path
+      //   },
+      //   {
+      //     id: 9,
+      //     title: 'Data Science and Python',
+      //     description: 'Data Science with Python covers the essential skills for analyzing and interpreting complex data. Learn to leverage Python’s powerful libraries to uncover insights and make data-driven decisions.',
+      //     backgroundImage: co1, // Replace with actual path
+      //     img: co1 // Replace with actual path
+      //   },
+      //   {
+      //     id: 10,
+      //     title: 'Data Engineering and Python',
+      //     description: 'Data Engineering focuses on designing and managing data systems and pipelines. Learn how to use Python to build robust data architectures and ensure data flows smoothly across various systems.',
+      //     backgroundImage: co1, // Replace with actual path
+      //     img: co1 // Replace with actual path
+      //   },
+      //   {
+      //     id: 11,
+      //     title: 'AI and Python',
+      //     description: 'Artificial Intelligence with Python explores how to create intelligent systems using Python’s extensive libraries. Gain insights into building AI models and implementing machine learning algorithms.',
+      //     backgroundImage: co1, // Replace with actual path
+      //     img: co1 // Replace with actual path
+      //   },
+      //   {
+      //     id: 12,
+      //     title: 'ML and Python',
+      //     description: 'Machine Learning with Python involves creating algorithms that allow computers to learn from data. Understand how to apply Python’s tools to build predictive models and solve complex problems.',
+      //     backgroundImage: co1, // Replace with actual path
+      //     img:co1// Replace with actual path
+      //   }
+      // ];
+  
 
   return (
     <>
@@ -70,7 +137,7 @@ const Course = () => {
             <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3.13em] text-center mt-[6%]">
               Courses We Offer
             </h1>
-            <CoursesComponent posts={posts} />
+            <CoursesComponent posts={data} />
             <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3.13em] text-center mt-[10%] mb-[3%]">
               Why Join Academy?
             </h1>

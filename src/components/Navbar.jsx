@@ -1,14 +1,15 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { Dialog, DialogPanel } from '@headlessui/react';
 
 const navigation = [
-  { name: 'Courses', href: 'course' },
-  { name: 'Masterclass', href: 'masterclass' },
-  { name: 'Hire from us', href: 'Hire' },
-  { name: 'About us', href: 'Aboutus' },
+  { name: 'Courses', item: 'course' },
+  { name: 'Masterclass', item: 'masterclass' },
+  { name: 'Hire from us', item: 'Hire' },
+  { name: 'About us', item: 'Aboutus' },
 ];
 
 const Navbar = () => {
@@ -39,9 +40,10 @@ const Navbar = () => {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
-              {item.name}
-            </a>
+            // <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+            //   {item.name}
+            // </a>
+            <Link key={item.name} to={item.item}>{item.name}</Link>
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">

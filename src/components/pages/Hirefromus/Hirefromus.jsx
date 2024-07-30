@@ -10,30 +10,84 @@ import Question from '../../Question'
 import './hire.css'
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Course from './../course/Course';
+import data from '../../../data'
 const Hirefromus = () => {
 
 
-  const posts = [
-    {
-      id: 1,
-      title: 'Web Development',
-      description: 'Explore the latest trends and technologies in web development.',
-      backgroundImage: co1,
-      img: co1
-    },
-    {
-      id: 2,
-      title: 'Mastering React',
-      description: 'he world cant live without mobile and web applications in this day and age. Everything is digitized, from booking cabs to ordering food to make bank transactions. Thanks to the efficient frameworks that provide a seamless user experience. One such robust frontend library is React. This tutorial on ‘what is React’ will help you understand the librarys fundamentals and work with a simple demo',
-      backgroundImage: co2
-    },
-    {
-      id: 3,
-      title: 'Mastering React',
-      description: 'he world cant live without mobile and web applications in this day and age. Everything is digitized, from booking cabs to ordering food to make bank transactions. Thanks to the efficient frameworks that provide a seamless user experience. One such robust frontend library is React. This tutorial on ‘what is React’ will help you understand the librarys fundamentals and work with a simple demo',
-      backgroundImage: co2
-    },
-  ];
+  // const posts = [
+  //   {
+  //     id: 1,
+  //     title: 'Full Stack JavaScript',
+  //     backgroundImage: co1, // Replace with actual path
+  //     img: co1  // Replace with actual path
+  //   },
+  //   {
+  //     id: 2,
+  //     title: 'Mastering React',
+  //     backgroundImage: co1, // Replace with actual path
+  //     img: co1 // Replace with actual path
+  //   },
+  //   {
+  //     id: 3,
+  //     title: 'React Native',
+  //     backgroundImage: co1, // Replace with actual path
+  //     img: co1 // Replace with actual path
+  //   },
+  //   {
+  //     id: 4,
+  //     title: 'React Native and Node',
+  //     backgroundImage: co1, // Replace with actual path
+  //     img: co1// Replace with actual path
+  //   },
+  //   {
+  //     id: 5,
+  //     title: 'Node.js',
+  //     backgroundImage: co1, // Replace with actual path
+  //     img: co1 // Replace with actual path
+  //   },
+  //   {
+  //     id: 6,
+  //     title: 'Flutter',
+  //     backgroundImage: co1, // Replace with actual path
+  //     img: co1 // Replace with actual path
+  //   },
+  //   {
+  //     id: 7,
+  //     title: 'Python Full Stack',
+  //     backgroundImage: co1, // Replace with actual path
+  //     img: co1 // Replace with actual path
+  //   },
+  //   {
+  //     id: 8,
+  //     title: 'UI/UX Design',
+  //     backgroundImage: co1, // Replace with actual path
+  //     img: co1 // Replace with actual path
+  //   },
+  //   {
+  //     id: 9,
+  //     title: 'Data Science and Python',
+  //     backgroundImage: co1, // Replace with actual path
+  //     img: co1 // Replace with actual path
+  //   },
+  //   {
+  //     id: 10,
+  //     title: 'Data Engineering and Python',
+  //     backgroundImage: co1, // Replace with actual path
+  //     img: co1 // Replace with actual path
+  //   },
+  //   {
+  //     id: 11,
+  //     title: 'AI and Python',
+  //     backgroundImage: co1, // Replace with actual path
+  //     img: co1 // Replace with actual path
+  //   },
+  //   {
+  //     id: 12,
+  //     title: 'ML and Python',
+  //     backgroundImage: co1, // Replace with actual path
+  //     img:co1// Replace with actual path
+  //   }
+  // ];
 
   return (
     <div style={{ marginTop: "100px" }}>
@@ -79,7 +133,7 @@ const Hirefromus = () => {
         <div className="py-4 sm:py-1 w-full flex justify-center mx-auto">
           <div className="mx-auto max-w-8xl w-[100%] lg:px-8">
             <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 pt-1 sm:mt-16 sm:pt-2  lg:max-w-none lg:grid-cols-2 lg:w-[60%] lg:mx-auto">
-              {posts.map((post) => (
+              {data.map((post) => (
                 <article
                   key={post.id}
                   className="flex max-w-xl flex-col items-start  p-4 rounded-3xl border-2 border-opacity-100 hover:border-red-100 h-[180px] w-[100%] sm:w-[100%] sm:mx-auto  relative"
