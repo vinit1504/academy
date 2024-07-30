@@ -69,3 +69,14 @@
         font-size: 12px;
     }
 }
+.slid{
+    background-color: rgb(236, 231, 231);
+    /* border: 0.2px solid rgb(67, 64, 64); */
+    color: black;
+}
+@media screen and (max-width:376px) {
+    .details{
+        font-size: 13px!important;
+        /* color: black; */
+    }
+}

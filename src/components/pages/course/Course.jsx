@@ -3,10 +3,10 @@ import React from 'react';
 import icon1 from './../../../assets/img/contact_icon1.svg';
 import icon2 from './../../../assets/img/contact_icon2.svg';
 import './style.css';
-import CoursesComponent from './../../../components/CoursesComponent'
+import CoursesComponent from "../../CoursesComponent"
 import co1 from './../../../assets/img/co-1.svg'
 import co2 from './../../../assets/img/co-2.svg'
-import soon from '../../../assets/img/comingsoon.jpg'
+// import soon from '../../../assets/img/comingsoon.jpg'
 import Join from './../../Join';
 import cer from './../../../assets/img/certificat.jpg'
 import student from './../../../assets/img/img8.jpg'
@@ -137,8 +137,13 @@ const Course = () => {
             <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3.13em] text-center mt-[6%]">
               Courses We Offer
             </h1>
+<<<<<<< HEAD
             <CoursesComponent posts={data} />
             <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3.13em] text-center mt-[10%] mb-[3%]">
+=======
+            <CoursesComponent posts={posts} />
+            <h1 className="text-2xl font-bold tracking-tight text-black sm:text-[3em] text-center mt-[7%] mb-[7%]">
+>>>>>>> 2c808bae1cbcb5ba9981c87001d616e3938816f4
               Why Join Academy?
             </h1>
             <Join />
@@ -150,11 +155,11 @@ const Course = () => {
                 <span className='text-center'>
                   Enhance your professional profile with an online certificate received upon project submission
                 </span>
-                <button className=' bg-red-500 px-6 py-2 rounded-3xl mt-5 items-center justify-center border-2 border-red-300 w-48'>
+                <button className=' bg-red-500 px-6 py-2 rounded-3xl mt-5 text-white items-center justify-center border-2 border-red-300 w-48'>
                   Register Now
                 </button>
               </div>
-              <div className="right-part w-full md:w-[50%]">
+              <div className="right-part1 w-full md:w-[50%] overflow-hidden">
                 <img src={cer} alt="Certificate" className='w-full' />
               </div>
             </div>
